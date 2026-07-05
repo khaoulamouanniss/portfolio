@@ -1,0 +1,210 @@
+:root {
+    --color-primary: #7b4f8f;
+    --color-primary-dark: #4b2c5e;
+    --color-secondary: #5f7488;
+    --color-background: #f8f6f2;
+    --color-surface: #ffffff;
+    --color-soft: #eee8f2;
+    --color-text: #2c2830;
+    --color-muted: #6f6875;
+    --color-border: #ded7e6;
+
+    --shadow-soft: 0 0.5rem 1.25rem rgba(60, 45, 70, 0.12);
+
+    --radius-small: 0.5rem;
+    --radius-medium: 1rem;
+    --radius-large: 1.75rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.footer-logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 0.375rem 0.625rem;
+    border-radius: 50%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    font-weight: bold;
+    padding: 0.5rem 0.25rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 2.5rem;
+    padding: 0.875rem 1.75rem;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-small {
+    padding: 0.625rem 1.25rem;
+}
+
+.btn-primary {
+    color: white;
+    background: linear-gradient(135deg, #7b4f8f, #9b6fae, #5f7488);
+    box-shadow: 0 0.625rem 1.5625rem rgba(123, 79, 143, 0.35);
+}
+
+.btn-primary:hover {
+    transform: translateY(-0.1875rem);
+    background: linear-gradient(135deg, #8e5fa3, #b184c3, #6f879c);
+    box-shadow: 0 0.9375rem 2.1875rem rgba(123, 79, 143, 0.45);
+}
+
+.btn-secondary {
+    color: #2f4356;
+    background: linear-gradient(135deg, #ffffff, #eef8fb, #f5edf7);
+    border: 1px solid #d9e5ea;
+    box-shadow: 0 0.625rem 1.5625rem rgba(95, 116, 136, 0.25);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-0.1875rem);
+    background: linear-gradient(135deg, #ffffff, #e3f5fb, #f8eef8);
+    box-shadow: 0 0.9375rem 2.1875rem rgba(95, 116, 136, 0.35);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.1875rem;
+}
+
+.section-title p {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    margin-bottom: 0.3125rem;
+}
+
+.section-title h2 {
+    margin: 0;
+    font-size: 2.125rem;
+    color: var(--color-primary-dark);
+}
+
+.intro-label {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffffff, #eee8f2);
+    color: var(--color-primary-dark);
+    padding: 0.5rem 0.875rem;
+    border-radius: 1.25rem;
+    font-weight: bold;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 0.5rem 1.25rem rgba(60, 45, 70, 0.08);
+}
+
+footer {
+    background-color: #2f2935;
+    color: white;
+    padding: 2.1875rem 0;
+    margin-top: 3.75rem;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: white;
+    border-color: white;
+    margin-bottom: 0.625rem;
+}
+
+.footer-links,
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+    color: #d9c6e8;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links img {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: white;
+    padding: 0.3125rem;
+    border-radius: 50%;
+}
+
+.social-links a:hover img {
+    background-color: #d9c6e8;
+}

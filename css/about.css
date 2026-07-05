@@ -1,0 +1,363 @@
+/* Page sur moi */
+
+/* Hero sur moi */
+
+.about-hero {
+    width: 90%;
+    max-width: 75rem;
+    margin: 2.8125rem auto;
+    padding: 3.4375rem;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at top left, rgba(123, 79, 143, 0.16), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(95, 116, 136, 0.16), transparent 30%),
+        linear-gradient(135deg, #ffffff, #f8f4fb);
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    width: 13.75rem;
+    height: 13.75rem;
+    right: -5rem;
+    top: -5rem;
+    border-radius: 50%;
+    background-color: rgba(123, 79, 143, 0.10);
+}
+
+.about-hero::after {
+    content: "</>";
+    position: absolute;
+    right: 2.1875rem;
+    bottom: 0.9375rem;
+    font-size: 5.625rem;
+    font-weight: bold;
+    color: rgba(123, 79, 143, 0.07);
+}
+
+.about-hero-text,
+.about-hero-card {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-text {
+    width: 65%;
+}
+
+.about-hero h1 {
+    font-size: 2.8125rem;
+    line-height: 1.15;
+    margin: 1.375rem 0;
+    color: var(--color-primary-dark);
+}
+
+.about-hero-text p {
+    font-size: 1.0625rem;
+    color: var(--color-muted);
+}
+
+.about-hero-card {
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.82);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 1.75rem;
+    box-shadow: 0 0.9375rem 2.1875rem rgba(60, 45, 70, 0.12);
+}
+
+.about-hero-card h2 {
+    margin-top: 0;
+    color: var(--color-primary-dark);
+}
+
+.about-hero-card p {
+    color: var(--color-muted);
+}
+
+.card-number {
+    font-size: 2.375rem;
+    font-weight: bold;
+    color: rgba(123, 79, 143, 0.25);
+    margin: 0 0 0.625rem;
+}
+
+
+/* Sections générales */
+
+.story-section,
+.values-section,
+.journey-section,
+.about-cta {
+    width: 90%;
+    max-width: 75rem;
+    margin: 4.375rem auto;
+}
+
+
+/* Histoire */
+
+.story-box {
+    display: flex;
+    gap: 1.875rem;
+    align-items: stretch;
+}
+
+.story-text {
+    width: 68%;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 2.1875rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.story-text h3 {
+    color: var(--color-primary-dark);
+    margin-top: 0;
+}
+
+.story-text p {
+    color: var(--color-muted);
+}
+
+.story-side {
+    width: 32%;
+    background:
+        linear-gradient(135deg, rgba(123, 79, 143, 0.95), rgba(95, 116, 136, 0.95));
+    color: white;
+    border-radius: var(--radius-medium);
+    padding: 2.1875rem;
+    box-shadow: 0 0.9375rem 2.1875rem rgba(60, 45, 70, 0.18);
+}
+
+.story-side h3 {
+    margin-top: 0;
+}
+
+.story-side ul {
+    padding-left: 1.25rem;
+}
+
+.story-side li {
+    margin-bottom: 0.75rem;
+}
+
+
+/* Créativité */
+
+.creative-section {
+    width: 90%;
+    max-width: 75rem;
+    margin: 4.375rem auto;
+}
+
+.creative-box {
+    display: flex;
+    gap: 1.875rem;
+    align-items: stretch;
+}
+
+.creative-text {
+    width: 68%;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 2.1875rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.creative-text h3 {
+    color: var(--color-primary-dark);
+    margin-top: 0;
+}
+
+.creative-text p {
+    color: var(--color-muted);
+}
+
+.creative-side {
+    width: 32%;
+    background:
+        linear-gradient(135deg, rgba(123, 79, 143, 0.95), rgba(95, 116, 136, 0.95));
+    color: white;
+    border-radius: var(--radius-medium);
+    padding: 1.875rem;
+    box-shadow: 0 0.9375rem 2.1875rem rgba(60, 45, 70, 0.18);
+}
+
+.creative-side h3 {
+    margin-top: 0;
+}
+
+.creative-side ul {
+    padding-left: 1.25rem;
+}
+
+.creative-side li {
+    margin-bottom: 0.75rem;
+}
+
+.cake-photo {
+    margin-top: 1.5625rem;
+    background-color: white;
+    padding: 0.625rem;
+    border-radius: var(--radius-medium);
+}
+
+.cake-photo img {
+    width: 100%;
+    height: 13.125rem;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: var(--radius-small);
+}
+
+
+/* Qualités */
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5625rem;
+}
+
+.value-card {
+    width: calc(50% - 0.8125rem);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.value-card::before {
+    content: "";
+    position: absolute;
+    width: 5.625rem;
+    height: 5.625rem;
+    right: -2.1875rem;
+    top: -2.1875rem;
+    border-radius: 50%;
+    background-color: rgba(123, 79, 143, 0.10);
+}
+
+.value-card:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 1rem 2.1875rem rgba(60, 45, 70, 0.16);
+}
+
+.value-card span {
+    display: inline-block;
+    color: rgba(123, 79, 143, 0.35);
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.value-card h3 {
+    color: var(--color-primary-dark);
+    margin-top: 0;
+}
+
+.value-card p {
+    color: var(--color-muted);
+}
+
+
+/* Parcours */
+
+.timeline {
+    display: flex;
+    gap: 1.5625rem;
+}
+
+.timeline-item {
+    width: 33.33%;
+    background:
+        linear-gradient(135deg, #ffffff, #f7f2fa);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-soft);
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    display: block;
+    width: 2.625rem;
+    height: 0.375rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.timeline-item h3 {
+    color: var(--color-primary-dark);
+    margin-top: 0;
+}
+
+.timeline-item p {
+    color: var(--color-muted);
+}
+
+
+/* Citation */
+
+.about-quote {
+    width: 90%;
+    max-width: 59.375rem;
+    margin: 5rem auto;
+    padding: 2.8125rem;
+    text-align: center;
+    border-radius: var(--radius-large);
+    background:
+        linear-gradient(135deg, rgba(123, 79, 143, 0.95), rgba(95, 116, 136, 0.95));
+    color: white;
+    box-shadow: 0 1.125rem 2.8125rem rgba(60, 45, 70, 0.20);
+}
+
+.about-quote p {
+    font-size: 1.5625rem;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* Appel à l'action */
+
+.about-cta {
+    text-align: center;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    padding: 2.8125rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.about-cta h2 {
+    color: var(--color-primary-dark);
+    margin-top: 0;
+}
+
+.about-cta p {
+    color: var(--color-muted);
+    max-width: 43.75rem;
+    margin: 0 auto 1.5625rem;
+}
+
+.about-cta .btn {
+    margin: 0.5rem;
+}

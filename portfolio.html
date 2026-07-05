@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projets de Khaoula El Mouanniss</title>
+
+    <meta name="description" content="Portfolio de Khaoula El Mouanniss présentant ses projets web, mobiles, IoT et IA : Arduino, Raspberry Pi, AquaEqua, Elementerre, Interview Scheduler, Tweeter et autres réalisations.">
+    <meta name="keywords" content="portfolio projets, Arduino, Raspberry Pi, IoT, React Native, AquaEqua, Elementerre, React, Node.js, MongoDB, Python, Khaoula El Mouanniss">
+    <meta name="author" content="Khaoula El Mouanniss">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">KE</a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">Sur moi</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="contact.html" class="btn btn-small btn-primary">Me contacter</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio-hero">
+            <div class="portfolio-hero-text">
+                <p class="intro-label">Portfolio</p>
+
+                <h1>Des projets web, mobiles et connectés.</h1>
+
+                <p>
+                    Voici une sélection de projets qui reflètent mon parcours en développement full stack,
+                    mobile, IoT et IA. Chaque projet représente une occasion d’apprendre, de résoudre un problème
+                    et de transformer une idée en solution concrète.
+                </p>
+            </div>
+
+            <div class="portfolio-hero-card">
+                <span>8</span>
+                <p>projets sélectionnés</p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="section-title">
+                <p>Réalisations</p>
+                <h2>Mes projets</h2>
+            </div>
+
+            
+            <div class="projects-grid">
+    <article class="project-card">
+        <div class="project-image">
+            <img src="images/projects/arduino-parking.png" alt="Prototype de barrière de parking Arduino">
+            <span>IoT</span>
+        </div>
+
+        <div class="project-content">
+            <p class="project-category">Arduino</p>
+            <h3>Barrière de parking Arduino</h3>
+
+            <p>
+                Prototype de barrière automatisée utilisant un clavier numérique,
+                un servo-moteur, une LED RGB et un buzzer. Le système valide un code
+                d’accès et déclenche une alarme après plusieurs tentatives incorrectes.
+            </p>
+
+            <div class="project-tags">
+                <span>Arduino</span>
+                <span>C++</span>
+                <span>Servo</span>
+                <span>LED RGB</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card featured">
+        <div class="project-image">
+            <img src="images/projects/raspberry-parking.png" alt="Interface du parking intelligent Raspberry Pi">
+            <span>IoT</span>
+        </div>
+
+        <div class="project-content">
+            <p class="project-category">Raspberry Pi</p>
+            <h3>Parking intelligent Raspberry Pi</h3>
+
+            <p>
+                Système de gestion d’un mini-parking avec logique d’états, gestion des places,
+                paiement, barrière, rappels, alertes et affichage. Le projet met en pratique
+                la programmation Python et la supervision d’un système connecté.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Raspberry Pi</span>
+                <span>Pygame</span>
+                <span>IoT</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-image">
+            <img src="images/projects/figma-maquette.png" alt="Maquette Figma d’une interface web">
+            <span>UI</span>
+        </div>
+
+        <div class="project-content">
+            <p class="project-category">Design d’interface</p>
+            <h3>Maquette Figma</h3>
+
+            <p>
+                Conception d’une maquette web moderne avec une attention portée à la cohérence
+                visuelle, la navigation, les composants, l’expérience utilisateur et l’adaptation
+                entre les versions mobile et desktop.
+            </p>
+
+            <div class="project-tags">
+                <span>Figma</span>
+                <span>UI</span>
+                <span>UX</span>
+                <span>Prototype</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-image mobile-project">
+    <img src="images/projects/mobile-aquaequa.png" alt="Capture mobile de l’application AquaEqua">
+    <span>Mobile</span>
+
+    <button type="button" class="play-video-button" id="open-video" aria-label="Voir la vidéo AquaEqua">
+        <img src="images/icons/play-btn.svg" alt="">
+    </button>
+</div>
+
+        <div class="project-content">
+            <p class="project-category">Application mobile</p>
+            <h3>AquaEqua</h3>
+
+            <p>
+                Application mobile pour la vente de gourdes écologiques avec deux types
+                d’utilisateurs : client et administrateur. Le projet combine gestion de données,
+                navigation mobile et interface utilisateur.
+            </p>
+
+            <div class="project-tags">
+                <span>React Native</span>
+                <span>SQLite</span>
+                <span>Mobile</span>
+            </div>
+           
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-image">
+            <img src="images/projects/elementerre.png" alt="Capture du site web Elementerre">
+            <span>Web</span>
+        </div>
+
+        <div class="project-content">
+            <p class="project-category">Application web transactionnelle</p>
+            <h3>Elementerre</h3>
+
+            <p>
+                Site de vente de produits écologiques avec panier, recherche, catégories,
+                sous-catégories, promotions, favoris, commandes, chat, rôles utilisateurs
+                et gestion des produits.
+            </p>
+
+            <div class="project-tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>EJS</span>
+                <span>Socket.io</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-image mobile-project">
+            <img src="images/projects/puzzle-mobile.png" alt="Capture mobile du jeu Puzzle numérique">
+            <span>Mobile</span>
+        </div>
+
+        <div class="project-content">
+            <p class="project-category">React Native</p>
+            <h3>Puzzle numérique</h3>
+
+            <p>
+                Jeu mobile permettant de trier des numéros dans une grille, avec une option
+                pour choisir la dimension d’affichage. Ce projet met en pratique la logique,
+                l’interaction utilisateur et le développement mobile.
+            </p>
+
+            <div class="project-tags">
+                <span>React Native</span>
+                <span>Logique</span>
+                <span>Jeu mobile</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-image">
+            <img src="images/projects/schedular.jpg" alt="Capture de l’application Interview Scheduler">
+            <span>React</span>
+        </div>
+
+        <div class="project-content">
+            <p class="project-category">Application React</p>
+            <h3>Interview Scheduler</h3>
+
+            <p>
+                Application web permettant aux étudiants de planifier, modifier et annuler
+                des rendez-vous avec des mentors. Le projet utilise une interface dynamique
+                et des tests pour valider les fonctionnalités.
+            </p>
+
+            <div class="project-tags">
+                <span>React</span>
+                <span>Axios</span>
+                <span>Storybook</span>
+                <span>Jest</span>
+                <span>Cypress</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-image">
+            <img src="images/projects/tweeter.png" alt="Capture de l’application Tweeter">
+            <span>Web</span>
+        </div>
+
+        <div class="project-content">
+            <p class="project-category">Application web</p>
+            <h3>Tweeter</h3>
+
+            <p>
+                Clone simple de Twitter en une seule page. L’application permet d’ajouter
+                des tweets dynamiquement, de valider le contenu et d’adapter l’affichage
+                aux différents formats d’écran.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>jQuery</span>
+                <span>Ajax</span>
+                <span>Node.js</span>
+            </div>
+        </div>
+    </article>
+</div>
+        </section>
+
+        <section class="portfolio-note">
+            <div class="note-content">
+                <p class="intro-label">Approche</p>
+                <h2>Un projet, une idée, une solution.</h2>
+
+                <p>
+                    Dans mes projets, j’aime partir d’un besoin concret, organiser les étapes,
+                    construire une première version fonctionnelle, puis améliorer l’expérience,
+                    les détails et la clarté de la solution.
+                </p>
+
+                <a href="contact.html" class="btn btn-secondary">Discuter d’un projet</a>
+            </div>
+        </section>
+
+        <div class="video-popup" id="video-popup">
+    <div class="video-box">
+        <button type="button" class="close-video" id="close-video">×</button>
+
+        <h2>Démonstration AquaEqua</h2>
+
+        <p class="video-description">
+            Courte démonstration de l’application mobile AquaEqua.
+        </p>
+
+        <video controls id="aquaequa-video">
+            <source src="videos/aquaequa-demo.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <a href="index.html" class="footer-logo">KE</a>
+                <p>© 2026 Khaoula El Mouanniss. Tous droits réservés.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">Sur moi</a>
+                <a href="cv.html">CV</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="articles.html">Articles</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="social-links">
+                    <a href="mailto:khaoula.mouanniss@gmail.com">
+                        <img src="images/icons/envelope.svg" alt>
+                        Email
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mouanniss/"
+                        target="_blank">
+                        <img src="images/icons/linkedin.svg" alt>
+                        LinkedIn
+                    </a>
+
+                    <a href="https://github.com/khaoulamouanniss"
+                        target="_blank">
+                        <img src="images/icons/github.svg" alt>
+                        GitHub
+                    </a>
+                </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
