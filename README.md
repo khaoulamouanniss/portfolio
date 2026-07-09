@@ -6,7 +6,7 @@ Le site présente mon profil, mon parcours, mes compétences, mes projets, des r
 
 ## Aperçu
 
-![Page accueil](docs/images/accueil.png)
+![Page accueil](images/accueil.png)
 
 ## Pages du site
 
