@@ -1,7 +1,6 @@
 /* Page CV */
 
 /* Conteneur principal */
-
 .cv-page {
     width: 90%;
     max-width: 75rem;
@@ -15,7 +14,6 @@
 
 
 /* En-tête du CV */
-
 .cv-header {
     padding: 2.8125rem;
     display: flex;
@@ -29,6 +27,7 @@
         linear-gradient(135deg, #ffffff, #f8f4fb);
 }
 
+/* Titre et rôle */
 .cv-title h1 {
     font-size: 2.875rem;
     line-height: 1.1;
@@ -71,13 +70,14 @@
 }
 
 
-/* Structure CV */
+/* Structure CV en deux colonnes */
 
 .cv-content {
     display: flex;
     align-items: flex-start;
 }
 
+/* Colonne gauche*/
 .cv-sidebar {
     width: 32%;
     padding: 2.1875rem;
@@ -85,6 +85,7 @@
     border-right: 1px solid var(--color-border);
 }
 
+/* Colonne principale */
 .cv-main {
     width: 68%;
     padding: 2.1875rem 2.8125rem;
@@ -92,7 +93,6 @@
 
 
 /* Blocs */
-
 .cv-block,
 .cv-section {
     margin-bottom: 2.1875rem;
@@ -107,6 +107,7 @@
     border-bottom: 2px solid #eadff0;
 }
 
+/* petit point devant les titres */
 .cv-block h3::before,
 .cv-section h3::before {
     content: "";
@@ -146,6 +147,8 @@
     color: var(--color-muted);
 }
 
+
+/* Expériences, projets et formations */
 .cv-item {
     padding: 1.25rem 0;
     border-bottom: 1px solid var(--color-border);
@@ -168,6 +171,7 @@
     font-size: 0.9375rem;
 }
 
+/* Technologies utilisées */
 .cv-tech {
     color: var(--color-primary-dark);
     font-weight: bold;
@@ -178,7 +182,7 @@
 }
 
 
-/* Petits effets */
+/* effet au hover */
 
 .cv-item:hover {
     background-color: #fcf9fd;

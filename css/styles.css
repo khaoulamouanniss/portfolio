@@ -1,3 +1,5 @@
+/* Variables globales */
+
 :root {
     --color-primary: #7b4f8f;
     --color-primary-dark: #4b2c5e;
@@ -15,6 +17,8 @@
     --radius-medium: 1rem;
     --radius-large: 1.75rem;
 }
+
+/* Styles globaux */
 
 * {
     box-sizing: border-box;
@@ -37,6 +41,8 @@ a {
     color: inherit;
 }
 
+/* En-tête */
+
 header {
     background-color: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
@@ -55,6 +61,7 @@ header {
     align-items: center;
 }
 
+/* Logo */
 .logo,
 .footer-logo {
     font-size: 1.75rem;
@@ -65,6 +72,7 @@ header {
     border-radius: 50%;
 }
 
+/* Menu */
 nav ul {
     padding: 0;
     margin: 0;
@@ -88,6 +96,7 @@ nav ul li a.active {
     border-bottom: 2px solid var(--color-primary);
 }
 
+/* Boutons */
 .btn {
     display: inline-block;
     border-radius: 2.5rem;
@@ -126,6 +135,7 @@ nav ul li a.active {
     box-shadow: 0 0.9375rem 2.1875rem rgba(95, 116, 136, 0.35);
 }
 
+/* Titre de section */
 .section-title {
     text-align: center;
     margin-bottom: 2.1875rem;
@@ -145,6 +155,7 @@ nav ul li a.active {
     color: var(--color-primary-dark);
 }
 
+/* Label de section */
 .intro-label {
     display: inline-block;
     background: linear-gradient(135deg, #ffffff, #eee8f2);
@@ -156,6 +167,7 @@ nav ul li a.active {
     box-shadow: 0 0.5rem 1.25rem rgba(60, 45, 70, 0.08);
 }
 
+/* Pied de page */
 footer {
     background-color: #2f2935;
     color: white;
@@ -191,6 +203,7 @@ footer {
     color: #d9c6e8;
 }
 
+/* Liens sociaux */
 .social-links a {
     display: flex;
     align-items: center;

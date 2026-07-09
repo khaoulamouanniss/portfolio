@@ -1,6 +1,6 @@
 /* Page sur moi */
 
-/* Hero sur moi */
+/* Section principale */
 
 .about-hero {
     width: 90%;
@@ -12,8 +12,6 @@
     display: flex;
     justify-content: space-between;
     gap: 2.5rem;
-    position: relative;
-    overflow: hidden;
 
     background:
         radial-gradient(circle at top left, rgba(123, 79, 143, 0.16), transparent 35%),
@@ -21,33 +19,7 @@
         linear-gradient(135deg, #ffffff, #f8f4fb);
 }
 
-.about-hero::before {
-    content: "";
-    position: absolute;
-    width: 13.75rem;
-    height: 13.75rem;
-    right: -5rem;
-    top: -5rem;
-    border-radius: 50%;
-    background-color: rgba(123, 79, 143, 0.10);
-}
-
-.about-hero::after {
-    content: "</>";
-    position: absolute;
-    right: 2.1875rem;
-    bottom: 0.9375rem;
-    font-size: 5.625rem;
-    font-weight: bold;
-    color: rgba(123, 79, 143, 0.07);
-}
-
-.about-hero-text,
-.about-hero-card {
-    position: relative;
-    z-index: 2;
-}
-
+/* Texte de la section sur moi */
 .about-hero-text {
     width: 65%;
 }
@@ -64,6 +36,7 @@
     color: var(--color-muted);
 }
 
+/* Carte Profil */
 .about-hero-card {
     width: 35%;
     background-color: rgba(255, 255, 255, 0.82);
@@ -82,14 +55,6 @@
     color: var(--color-muted);
 }
 
-.card-number {
-    font-size: 2.375rem;
-    font-weight: bold;
-    color: rgba(123, 79, 143, 0.25);
-    margin: 0 0 0.625rem;
-}
-
-
 /* Sections générales */
 
 .story-section,
@@ -101,7 +66,6 @@
     margin: 4.375rem auto;
 }
 
-
 /* Histoire */
 
 .story-box {
@@ -110,6 +74,7 @@
     align-items: stretch;
 }
 
+/* Texte principal de l’histoire */
 .story-text {
     width: 68%;
     background-color: var(--color-surface);
@@ -128,6 +93,7 @@
     color: var(--color-muted);
 }
 
+/* Encadré latéral */
 .story-side {
     width: 32%;
     background:
@@ -150,7 +116,6 @@
     margin-bottom: 0.75rem;
 }
 
-
 /* Créativité */
 
 .creative-section {
@@ -165,6 +130,7 @@
     align-items: stretch;
 }
 
+/* Texte créativité */
 .creative-text {
     width: 68%;
     background-color: var(--color-surface);
@@ -183,6 +149,7 @@
     color: var(--color-muted);
 }
 
+/* Encadré créativité */
 .creative-side {
     width: 32%;
     background:
@@ -205,6 +172,7 @@
     margin-bottom: 0.75rem;
 }
 
+/* Photo cake design */
 .cake-photo {
     margin-top: 1.5625rem;
     background-color: white;
@@ -220,7 +188,6 @@
     border-radius: var(--radius-small);
 }
 
-
 /* Qualités */
 
 .values-grid {
@@ -229,6 +196,7 @@
     gap: 1.5625rem;
 }
 
+/* Cartes des qualités */
 .value-card {
     width: calc(50% - 0.8125rem);
     background-color: var(--color-surface);
@@ -237,19 +205,6 @@
     padding: 1.75rem;
     box-shadow: var(--shadow-soft);
     transition: 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.value-card::before {
-    content: "";
-    position: absolute;
-    width: 5.625rem;
-    height: 5.625rem;
-    right: -2.1875rem;
-    top: -2.1875rem;
-    border-radius: 50%;
-    background-color: rgba(123, 79, 143, 0.10);
 }
 
 .value-card:hover {
@@ -274,7 +229,6 @@
     color: var(--color-muted);
 }
 
-
 /* Parcours */
 
 .timeline {
@@ -282,6 +236,7 @@
     gap: 1.5625rem;
 }
 
+/* Étapes du parcours */
 .timeline-item {
     width: 33.33%;
     background:
@@ -293,6 +248,7 @@
     position: relative;
 }
 
+/* trait décoratif */
 .timeline-item::before {
     content: "";
     display: block;
@@ -311,7 +267,6 @@
 .timeline-item p {
     color: var(--color-muted);
 }
-
 
 /* Citation */
 
@@ -335,9 +290,7 @@
     font-weight: bold;
 }
 
-
-/* Appel à l'action */
-
+/* Boutons cta*/
 .about-cta {
     text-align: center;
     background-color: var(--color-surface);

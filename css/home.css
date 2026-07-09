@@ -1,5 +1,6 @@
 /* Page accueil */
 
+/* Section principale */
 .hero {
     width: 90%;
     max-width: 75rem;
@@ -11,47 +12,16 @@
     justify-content: space-between;
     align-items: center;
     gap: 2.8125rem;
-    position: relative;
-    overflow: hidden;
 
     background:
-        radial-gradient(circle at top right, rgba(123, 79, 143, 0.18), transparent 35%),
+        radial-gradient(circle at top right, rgba(123, 79, 143, 0.18), transparent 40%),
         radial-gradient(circle at bottom left, rgba(95, 116, 136, 0.18), transparent 30%),
         linear-gradient(135deg, #ffffff, #f8f4fb);
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 11.25rem;
-    height: 11.25rem;
-    right: -3.75rem;
-    top: -3.75rem;
-    border-radius: 50%;
-    background-color: rgba(123, 79, 143, 0.12);
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 16.25rem;
-    height: 16.25rem;
-    left: -5.625rem;
-    bottom: -6.25rem;
-    border-radius: 50%;
-    background-color: rgba(95, 116, 136, 0.12);
-}
-
-.hero-text,
-.hero-photo {
-    position: relative;
-    z-index: 2;
 }
 
 .hero-text {
     width: 60%;
 }
-
 
 .hero h1 {
     font-size: 3.375rem;
@@ -84,6 +54,7 @@
     max-width: 40.625rem;
 }
 
+/* Mots-clés du profil */
 .hero-keywords {
     margin-top: 1.5625rem;
 }
@@ -100,6 +71,7 @@
     font-size: 0.875rem;
 }
 
+/* Boutons */
 .hero-buttons {
     margin-top: 1.875rem;
 }
@@ -108,7 +80,6 @@
     margin-right: 0.75rem;
     margin-bottom: 0.75rem;
 }
-
 
 /* Image hero */
 
@@ -147,6 +118,7 @@
     background-color: white;
 }
 
+/* qualités sous la photo */
 .qualities {
     margin-top: 1.25rem;
 }
@@ -163,7 +135,6 @@
     font-weight: bold;
 }
 
-
 /* Sections générales */
 
 .what-i-do,
@@ -173,7 +144,6 @@
     max-width: 75rem;
     margin: 4.375rem auto;
 }
-
 
 /* Cartes domaines */
 
@@ -213,6 +183,16 @@
     border: 2px solid rgba(123, 79, 143, 0.18);
 }
 
+.card-icon {
+    width: 2.375rem;
+    height: 2.375rem;
+    padding: 0.5625rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffffff, #eee8f2);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 0.5rem 1.125rem rgba(60, 45, 70, 0.10);
+    margin-bottom: 0.625rem;
+}
 
 /* Projets en vedette */
 
@@ -246,6 +226,7 @@
     color: var(--color-muted);
 }
 
+/* Images des projets */
 .project-image {
     height: 12.5rem;
     border-radius: var(--radius-small);
@@ -260,6 +241,7 @@
     object-fit: cover;
 }
 
+/* Tag des projets */
 .project-image span {
     position: absolute;
     left: 0.9375rem;
@@ -272,6 +254,7 @@
     box-shadow: 0 0.5rem 1.125rem rgba(60, 45, 70, 0.12);
 }
 
+/* Prévisualisation mobile */
 .mobile-preview {
     background:
         radial-gradient(circle at top right, rgba(123, 79, 143, 0.18), transparent 35%),
@@ -289,18 +272,7 @@
     box-shadow: 0 0.625rem 1.5625rem rgba(60, 45, 70, 0.18);
 }
 
-.arduino-bg {
-    background: linear-gradient(135deg, rgba(123, 79, 143, 0.85), rgba(95, 116, 136, 0.75));
-}
-
-.raspberry-bg {
-    background: linear-gradient(135deg, rgba(95, 116, 136, 0.85), rgba(123, 79, 143, 0.65));
-}
-
-.mobile-bg {
-    background: linear-gradient(135deg, rgba(155, 111, 174, 0.75), rgba(220, 229, 234, 0.95));
-}
-
+/* Tag des projets */
 .project-tags {
     margin: 0.9375rem 0;
 }
@@ -330,8 +302,7 @@
     margin-top: 2.1875rem;
 }
 
-
-/* Section sur moi */
+/* Section courte sur moi */
 
 .about-box {
     max-width: 53.125rem;
@@ -363,15 +334,4 @@
 
 .about-box p {
     color: var(--color-muted);
-}
-
-.card-icon {
-    width: 2.375rem;
-    height: 2.375rem;
-    padding: 0.5625rem;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #ffffff, #eee8f2);
-    border: 1px solid var(--color-border);
-    box-shadow: 0 0.5rem 1.125rem rgba(60, 45, 70, 0.10);
-    margin-bottom: 0.625rem;
 }

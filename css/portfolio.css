@@ -13,8 +13,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 2.8125rem;
-    position: relative;
-    overflow: hidden;
 
     background:
         radial-gradient(circle at top right, rgba(123, 79, 143, 0.16), transparent 35%),
@@ -22,33 +20,7 @@
         linear-gradient(135deg, #ffffff, #f8f4fb);
 }
 
-.portfolio-hero::before {
-    content: "";
-    position: absolute;
-    width: 14.375rem;
-    height: 14.375rem;
-    right: -5rem;
-    top: -5rem;
-    border-radius: 50%;
-    background-color: rgba(123, 79, 143, 0.11);
-}
-
-.portfolio-hero::after {
-    content: "{ }";
-    position: absolute;
-    right: 2.1875rem;
-    bottom: 0.625rem;
-    font-size: 5.625rem;
-    font-weight: bold;
-    color: rgba(123, 79, 143, 0.07);
-}
-
-.portfolio-hero-text,
-.portfolio-hero-card {
-    position: relative;
-    z-index: 2;
-}
-
+/* Texte du hero */
 .portfolio-hero-text {
     width: 70%;
 }
@@ -65,6 +37,7 @@
     font-size: 1.0625rem;
 }
 
+/* Cercle du nombre de projets */
 .portfolio-hero-card {
     width: 14.375rem;
     height: 14.375rem;
@@ -91,7 +64,6 @@
     font-weight: bold;
 }
 
-
 /* Section projets */
 
 .projects-section,
@@ -101,12 +73,14 @@
     margin: 4.375rem auto;
 }
 
+/* Grille des projets */
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1.75rem;
 }
 
+/* Carte projet */
 .project-card {
     width: calc(33.33% - 1.1875rem);
     background-color: var(--color-surface);
@@ -126,6 +100,7 @@
     border: 2px solid rgba(123, 79, 143, 0.25);
 }
 
+/* Image du projet */
 .project-image {
     height: 11.5625rem;
     position: relative;
@@ -141,6 +116,7 @@
     object-fit: cover;
 }
 
+/* Tag du projet */
 .project-image span {
     position: absolute;
     left: 0.9375rem;
@@ -154,6 +130,7 @@
     box-shadow: 0 0.5rem 1.125rem rgba(60, 45, 70, 0.15);
 }
 
+/* Prévisualisation mobile */
 .mobile-project {
     display: flex;
     justify-content: center;
@@ -168,6 +145,7 @@
     box-shadow: 0 0.625rem 1.5625rem rgba(60, 45, 70, 0.18);
 }
 
+/* Contenu de la carte projet */
 .project-content {
     padding: 1.5625rem;
 }
@@ -191,6 +169,7 @@
     color: var(--color-muted);
 }
 
+/* Technologies utilisées */
 .project-tags {
     margin-top: 1.125rem;
 }
@@ -206,7 +185,6 @@
     font-size: 0.8125rem;
 }
 
-
 /* Note portfolio */
 
 .portfolio-note {
@@ -215,27 +193,13 @@
     text-align: center;
     box-shadow: var(--shadow-soft);
     border: 1px solid var(--color-border);
-    position: relative;
-    overflow: hidden;
 
     background:
         radial-gradient(circle at top left, rgba(123, 79, 143, 0.13), transparent 35%),
         linear-gradient(135deg, #ffffff, #f7f2fa);
 }
 
-.portfolio-note::before {
-    content: "01";
-    position: absolute;
-    left: 1.875rem;
-    top: 0.625rem;
-    font-size: 5.9375rem;
-    font-weight: bold;
-    color: rgba(123, 79, 143, 0.07);
-}
-
 .note-content {
-    position: relative;
-    z-index: 2;
     max-width: 47.5rem;
     margin: 0 auto;
 }
@@ -250,7 +214,6 @@
     color: var(--color-muted);
     margin-bottom: 1.5625rem;
 }
-
 
 /* Popup vidéo */
 
@@ -268,6 +231,7 @@
     align-items: center;
 }
 
+/* Affichage de la popup avec JavaScript */
 .video-popup.active {
     display: flex;
 }
@@ -296,6 +260,7 @@
     margin-bottom: 1.25rem;
 }
 
+/* Vidéo verticale AquaEqua */
 .video-box video {
     width: 16.25rem;
     height: 35.625rem;
@@ -307,6 +272,7 @@
     background-color: black;
 }
 
+/* Bouton de fermeture */
 .close-video {
     position: absolute;
     top: 0.875rem;
@@ -324,7 +290,6 @@
 .close-video:hover {
     background-color: var(--color-primary);
 }
-
 
 /* Bouton play */
 
